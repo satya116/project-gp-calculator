@@ -1,0 +1,18 @@
+<bundleinstallationscript scriptid="customscript_gross_bundle_install">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name> Gross Profit Bundle Install</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteApps/com.net.GrossProfit/suite_grossprofit_bundle_install_script.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_gross_bundle_install">
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title> Gross Profit Bundle Install</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</bundleinstallationscript>

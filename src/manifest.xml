@@ -1,0 +1,13 @@
+<manifest projecttype="SUITEAPP">
+  <publisherid>com.projectsatya</publisherid>
+  <projectid>gpcalculator</projectid>
+  <projectname>gpcalculator</projectname>
+  <projectversion>0.0.0</projectversion>
+  <frameworkversion>1.0</frameworkversion>
+  <dependencies>
+    <features>
+      <feature required="true">CUSTOMRECORDS</feature>
+      <feature required="true">SERVERSIDESCRIPTING</feature>
+    </features>
+  </dependencies>
+</manifest>

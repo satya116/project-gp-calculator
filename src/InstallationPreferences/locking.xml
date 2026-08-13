@@ -1,0 +1,5 @@
+<preference type="LOCKING" defaultAction="UNLOCK">
+  <apply action="LOCK">
+    <object>customsearch_gp_so_search</object>
+  </apply>
+</preference>

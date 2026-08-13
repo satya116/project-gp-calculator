@@ -1,0 +1,8 @@
+<preference type="HIDING" defaultAction="HIDE">
+  <apply action="UNHIDE">
+    <path>~/FileCabinet/SuiteApps/com.projectsatya.gpcalculator/gp_client.js</path>
+    <path>~/FileCabinet/SuiteApps/com.projectsatya.gpcalculator/gp_postevent.js</path>
+    <path>~/FileCabinet/SuiteApps/com.projectsatya.gpcalculator/gp_task_status_client.js</path>
+    <path>~/FileCabinet/SuiteApps/com.projectsatya.gpcalculator/gp_utils_gp_calculation.js</path>
+  </apply>
+</preference>
