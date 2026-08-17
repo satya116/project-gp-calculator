@@ -189,27 +189,14 @@ define([
       pricefieldId = grossProfitFieldIds.soItemPriceFieldId;
     }
 
-    if (isMultiCurrency) {
-      GpCalculationUtils.calculationForMultiCurrency({
-        grossProfitFieldIds: grossProfitFieldIds,
-        currentRecord: newRecord,
-        costfieldId: costfieldId,
-        pricefieldId: pricefieldId,
-        lineItemCount: lineItemCount,
-        isClient: false,
-        contextType: contextType,
-        considerDiscountRate: considerOrderDiscount,
-      });
-    } else {
-      GpCalculationUtils.calculationForNonMultiCurrency({
-        currentRecord: newRecord,
-        costfieldId: costfieldId,
-        pricefieldId: pricefieldId,
-        lineItemCount: lineItemCount,
-        isClient: false,
-        considerDiscountRate: considerOrderDiscount,
-      });
-    }
+    GpCalculationUtils.calculationForNonMultiCurrency({
+      currentRecord: newRecord,
+      costfieldId: costfieldId,
+      pricefieldId: pricefieldId,
+      lineItemCount: lineItemCount,
+      isClient: false,
+      considerDiscountRate: considerOrderDiscount,
+    });
 
     postevent.postevent({ newRecord: newRecord });
     return newRecord;

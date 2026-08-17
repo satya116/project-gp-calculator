@@ -59,26 +59,14 @@ define(["N/runtime", "N/record", "./gp_utils_gp_calculation"], function (
         return false;
       }
 
-      if (isMultiCurrency) {
-        GpCalculationUtils.calculationForMultiCurrency({
-          grossProfitFieldIds: grossProfitFieldIds,
-          currentRecord: currentRecord,
-          costfieldId: costfieldId,
-          pricefieldId: pricefieldId,
-          lineItemCount: lineItemCount,
-          isClient: true,
-          considerDiscountRate: considerOrderDiscount,
-        });
-      } else {
-        GpCalculationUtils.calculationForNonMultiCurrency({
-          currentRecord: currentRecord,
-          costfieldId: costfieldId,
-          pricefieldId: pricefieldId,
-          lineItemCount: lineItemCount,
-          isClient: true,
-          considerDiscountRate: considerOrderDiscount,
-        });
-      }
+      GpCalculationUtils.calculationForNonMultiCurrency({
+        currentRecord: currentRecord,
+        costfieldId: costfieldId,
+        pricefieldId: pricefieldId,
+        lineItemCount: lineItemCount,
+        isClient: true,
+        considerDiscountRate: considerOrderDiscount,
+      });
     };
   }
 
